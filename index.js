@@ -3,6 +3,8 @@ function sayHi(){
 }
 
 const nemo = ["nemo"];
+const everyone = ["kim", "maggie", "hi", "ha", "ho", "nemo"];
+const large = new Array(100).fill('nemo')
 
 function findNemo(array){
   let t0 = Date.now()
@@ -15,4 +17,4 @@ function findNemo(array){
   console.log(`Call to find nemo took ${t1-t0}`)
 }
 
-findNemo(nemo)
+findNemo(large)

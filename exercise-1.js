@@ -17,3 +17,5 @@ function funChallenge(input){
 }
 
 // O(3 + 4n)
+
+// ^ You won't need to calculate Big O step by step. 

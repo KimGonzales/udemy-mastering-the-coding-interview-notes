@@ -3,7 +3,7 @@ function sayHi(){
 }
 
 const nemo = ["nemo"];
-const everyone = ["kim", "maggie", "hi", "ha", "ho", "nemo"];
+const everyone = ["kim", "maggie", "hi", "ha", "nemo"];
 const large = new Array(100).fill('nemo')
 
 function findNemo(array){
@@ -11,16 +11,18 @@ function findNemo(array){
   for (let i = 0; i < array.length; i ++){
     if (array[i] === "nemo"){
       console.log("FOUND NEMO!")
+      break //put in a break to make this more efficient!!
     }
   }
 }
 
 findNemo(large); //O(n) The BIG O of n is Linear Time
 // n simply means the Big O depends on the number of inputs aka 'n'
-// if input was our variable nemo Big O would be O(1) because the nemo array has just 1 element
+// if input was our 'everyone' variable (which has a length of 5) Big O notation 
+// would be O(5) because the nemo array has just 1 element
 
 /* 
-Big O doesn't measure things in seconds, instead we're foucsing on how quickly
+Big O doesn't measure things in seconds, instead we're focusing on how quickly
 our run time grows. We do this by  measuring the size of the input and compare it to the 
 number of ooperations that increase. Thats what scalability means. As things grow larger and larger
 does it scale?

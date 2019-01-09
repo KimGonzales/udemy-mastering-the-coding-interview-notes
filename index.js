@@ -3,6 +3,7 @@ function sayHi(){
 }
 
 const nemo = ["nemo"];
+
 function findNemo(array){
   for (let i = 0; i < array.length; i ++){
     if (array[i] === "nemo"){
@@ -11,4 +12,4 @@ function findNemo(array){
   }
 }
 
-findNemo([1,2,"nemo","hi"])
+findNemo(nemo)

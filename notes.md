@@ -34,4 +34,24 @@ How can we make FindNemo more efficient? Put in a break!
 
 The worst case scenario for findNemo would be if 'nemo' was the last item in the array. the BEST case would be if it was the first. 
 
+### Rule 2: Remove Constants
+
+```
+function printFirstItemThenFirstHalfThenSayHi100Times (items){
+  console.log(items[0]);
+  var middleIndex = Math.floor(items.length / 2);
+  var index = 0;
+
+  while (index < middleIndex) {
+    console.log(items[index]){
+      index++;
+    }
+
+    for (var = i; i < 100; i++){
+      console.log("hi")
+    }
+  }
+}
+```
+
 
